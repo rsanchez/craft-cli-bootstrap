@@ -1,0 +1,13 @@
+{
+    "name": "craft-cli/bootstrap",
+    "description": "Bootstrap the Craft CMS environment",
+    "autoload": {
+        "psr-4": { "CraftCli\\Bootstrap\\": "src/" }
+    },
+    "authors": [
+        {
+            "name": "Rob Sanchez",
+            "email": "info@robsanchez.com"
+        }
+    ]
+}
