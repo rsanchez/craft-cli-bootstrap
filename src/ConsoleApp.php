@@ -40,6 +40,8 @@ class ConsoleApp extends CraftConsoleApp
         if (!self::$instance) {
             throw new Exception('You must first set the instance via setInstance().');
         }
+
+        return self::$instance;
     }
 
     public static function setInstance(CApplication $app)
