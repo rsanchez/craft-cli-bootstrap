@@ -66,8 +66,8 @@ ini_set('display_errors', 1);
 defined('YII_DEBUG') || define('YII_DEBUG', true);
 defined('YII_TRACE_LEVEL') || define('YII_TRACE_LEVEL', 3);
 
-require_once CRAFT_APP_PATH.'framework/yii.php';
-require_once CRAFT_APP_PATH.'vendor/autoload.php';
+require_once CRAFT_FRAMEWORK_PATH.'yii.php';
+require_once CRAFT_VENDOR_PATH.'autoload.php';
 
 Yii::$enableIncludePath = false;
 
