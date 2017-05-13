@@ -16,7 +16,10 @@ if (!isset($craftPath)) {
     }
 }
 
-$appPath = realpath($craftPath.'/app');
+if (!isset($appPath)) {
+    $appPath = realpath($craftPath.'/app');
+}
+
 
 defined('CRAFT_APP_PATH') || define('CRAFT_APP_PATH', $appPath.'/');
 defined('CRAFT_VENDOR_PATH') || define('CRAFT_VENDOR_PATH', CRAFT_APP_PATH.'vendor/');
